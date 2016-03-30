@@ -1,0 +1,41 @@
+h2 {
+  text-transform: lowercase;
+  font-weight: 200; }
+
+#restaurant-menu {
+  display: flex;
+  flex-direction: column; }
+  #restaurant-menu .cat1 .image-placeholder {
+    background-image: url("../images/meat.jpg");
+    background-size: cover; }
+  #restaurant-menu .menu-category {
+    flex: 1;
+    display: block;
+    text-decoration: none; }
+    #restaurant-menu .menu-category .image-placeholder {
+      opacity: 0.5; }
+    #restaurant-menu .menu-category:hover .image-placeholder {
+      opacity: 1; }
+    #restaurant-menu .menu-category:hover li {
+      color: black; }
+    #restaurant-menu .menu-category:hover li.more {
+      color: #f80; }
+    #restaurant-menu .menu-category .image-placeholder {
+      height: 100px;
+      background-color: #ddd; }
+    #restaurant-menu .menu-category h2 {
+      padding: 0;
+      margin: 0;
+      color: #4c80ae;
+      height: 1.2em;
+      margin-top: 1em; }
+    #restaurant-menu .menu-category ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      margin-top: 15px; }
+    #restaurant-menu .menu-category li {
+      padding: 4px 0;
+      color: black; }
+    #restaurant-menu .menu-category h2, #restaurant-menu .menu-category li {
+      padding-right: 40px; }
