@@ -44,6 +44,9 @@ h2 {
           border-top: 1px dotted #aaa; }
       .restaurant-menu li div.row > span.title-viet {
         margin-left: 12px; }
+        @media screen and (max-width: 650px) {
+          .restaurant-menu li div.row > span.title-viet {
+            display: none; } }
       .restaurant-menu li div.row > span.price {
         text-align: center;
         width: 60px; }
@@ -53,6 +56,12 @@ h2 {
         color: #aaa;
         margin-right: 12px;
         margin-left: 0; }
+    .restaurant-menu li div.title-viet {
+      display: none; }
+      @media screen and (max-width: 650px) {
+        .restaurant-menu li div.title-viet {
+          display: block;
+          margin-left: 43px; } }
     .restaurant-menu li div.description {
       margin-left: 43px;
       margin-top: 0.5em;
