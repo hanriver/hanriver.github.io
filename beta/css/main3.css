@@ -55,13 +55,14 @@ header {
       top: 0em; } }
   @media screen and (max-width: 650px) {
     header {
-      text-align: center; } }
+      text-align: center;
+      padding: 0; } }
 
 header h1 {
   display: none; }
 
 #logo-image {
-  width: 15em; }
+  height: 125px; }
 
 #left-menu {
   flex-direction: column;
@@ -117,22 +118,46 @@ header h1 {
       flex-grow: 1;
       font-size: 1.25em; } }
 
-#location, #hours, #social-links {
-  padding: 0.25em;
-  margin-top: 1.5em;
-  font-weight: 300;
-  font-size: 0.85em;
-  color: #888;
-  /*
-  text-align:center;
-  */ }
+header #header-extras {
+  margin-top: 2em; }
+  header #header-extras i {
+    vertical-align: top;
+    font-size: 1.5em;
+    color: #888; }
+  header #header-extras #location, header #header-extras #hours, header #header-extras #social-links, header #header-extras #phone {
+    padding: 0.25em;
+    margin-top: 1.5em;
+    font-weight: 300;
+    font-size: 0.85em;
+    color: #888;
+    /*
+    text-align:center;
+    */ }
+    @media screen and (max-width: 650px) {
+      header #header-extras #location, header #header-extras #hours, header #header-extras #social-links, header #header-extras #phone {
+        display: none; } }
   @media screen and (max-width: 650px) {
-    #location, #hours, #social-links {
-      display: none; } }
-
-#social-links {
-  margin-top: 3em;
-  padding-top: 2em; }
+    header #header-extras {
+      display: flex;
+      margin-top: 0; }
+      header #header-extras i {
+        color: #4196be;
+        font-size: 1.5em; }
+      header #header-extras #phone {
+        text-align: left; }
+      header #header-extras #social-links {
+        text-align: right; }
+      header #header-extras #phone, header #header-extras #social-links {
+        margin-top: 0;
+        margin: 0.5em 0;
+        font-size: 1.25em;
+        display: block;
+        flex-grow: 1; }
+        header #header-extras #phone a, header #header-extras #social-links a {
+          color: #4196be;
+          text-decoration: underline; }
+      header #header-extras #social-links a img {
+        padding: 0.1em 0.5em; } }
 
 #social-links a img {
   width: 24px;

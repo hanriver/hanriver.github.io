@@ -36,8 +36,11 @@
   font-size: 1.25em;
   padding: 10px 10px;
   padding-bottom: 0;
-  width: 100%;
+  width: 70%;
   color: rgba(0, 0, 0, 0.5); }
+  @media screen and (max-width: 650px) {
+    .intro-actions, .intro, .about-image {
+      width: 100%; } }
 
 .intro {
   quotes: "“" "”" "‘" "’";
@@ -48,10 +51,13 @@
     color: #000;
     padding: 5px;
     background-color: transparent;
-    animation: animate-highlights;
+    animation-name: animate-highlights;
     animation-duration: 1s;
     animation-fill-mode: backwards;
     animation-delay: 1s; }
+    @media screen and (max-width: 650px) {
+      .intro em {
+        animation: none; } }
   .intro > div {
     padding: 0.5em;
     margin-bottom: 1em;
@@ -61,25 +67,31 @@
     animation-duration: 1s;
     animation-fill-mode: backwards;
     animation-delay: 1s; }
+    @media screen and (max-width: 650px) {
+      .intro > div {
+        animation: none; } }
     .intro > div > div.quote {
       flex-grow: 1;
       width: 60%;
       align-self: center; }
-    .intro > div > div.image {
-      width: 40%;
+    .intro > div > div.white {
+      width: 1%;
       display: block;
       flex-grow: 1;
       flex-shrink: 1;
       display: flex;
       align-items: center;
-      margin-left: 10px;
-      padding: 20px;
+      margin-left: 0px;
+      padding: 5px;
       justify-content: center;
       animation-name: show-content;
       animation-timing-function: ease-in-out;
       animation-duration: 1s;
       animation-fill-mode: backwards;
       animation-delay: 2s; }
+      @media screen and (max-width: 650px) {
+        .intro > div > div.white {
+          animation: none; } }
     .intro > div img {
       width: 100%; }
   .intro .part-1 {
@@ -119,20 +131,30 @@
     font-size: 1em;
     vertical-align: -0.075em; }
 
-div.about-image {
+.about-image {
   height: 200px;
-  background-image: url("../images/sandwich.jpg");
-  background-size: cover;
-  margin: 20px; }
+  padding: 0;
+  margin-bottom: 0.5em; }
 
-.intro-actions {
+.about-image-image {
+  height: 200px;
+  background-image: url("../images/boat.jpg");
+  background-size: cover;
+  background-position-x: center; }
+
+.intro-actions, .about-image-image {
   animation-name: show-content;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
   animation-delay: 0;
   animation-duration: 1s;
   animation-fill-mode: backwards;
-  animation-delay: 2s;
+  animation-delay: 1s; }
+  @media screen and (max-width: 650px) {
+    .intro-actions, .about-image-image {
+      animation: none; } }
+
+.intro-actions {
   padding-top: 0;
   padding-bottom: 0;
   display: flex; }
