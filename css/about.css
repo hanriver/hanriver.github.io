@@ -139,7 +139,7 @@
   .about-image .about-image-caption {
     opacity: 0;
     transition: opacity 0.5s; }
-  .about-image:hover .about-image-caption {
+  .about-image:hover .about-image-caption, .about-image:active .about-image-caption {
     opacity: 1; }
 
 .about-image-image {
