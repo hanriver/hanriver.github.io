@@ -1,0 +1,69 @@
+h1 {
+  margin-bottom: 1em; }
+  h1 a {
+    color: inherit;
+    text-decoration: none; }
+    h1 a:hover {
+      color: #4196be; }
+
+h2 {
+  background-color: #ddd;
+  text-transform: lowercase;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+  padding: 0.25em;
+  margin-bottom: 30px;
+  padding-left: 40px; }
+
+.restaurant-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px; }
+  .restaurant-menu li.price.head {
+    display: flex; }
+    .restaurant-menu li.price.head div {
+      width: 60px;
+      text-align: center;
+      margin: 0 3px; }
+    .restaurant-menu li.price.head div:first-child {
+      flex-grow: 1; }
+  .restaurant-menu li {
+    margin: 0;
+    margin-bottom: 2.5em; }
+    .restaurant-menu li div.row {
+      display: flex; }
+    .restaurant-menu li div.row > span {
+      display: block;
+      margin: 0 3px; }
+      .restaurant-menu li div.row > span.spring {
+        flex-grow: 1; }
+        .restaurant-menu li div.row > span.spring hr {
+          border: none;
+          border-top: 1px dotted #aaa; }
+      .restaurant-menu li div.row > span.title-viet {
+        margin-left: 12px; }
+        @media screen and (max-width: 650px) {
+          .restaurant-menu li div.row > span.title-viet {
+            display: none; } }
+      .restaurant-menu li div.row > span.price {
+        text-align: center;
+        width: 60px; }
+      .restaurant-menu li div.row > span.id {
+        width: 28px;
+        text-align: right;
+        color: #aaa;
+        margin-right: 12px;
+        margin-left: 0; }
+    .restaurant-menu li div.title-viet {
+      display: none; }
+      @media screen and (max-width: 650px) {
+        .restaurant-menu li div.title-viet {
+          display: block;
+          margin-left: 43px; } }
+    .restaurant-menu li div.description {
+      margin-left: 43px;
+      margin-top: 0.5em;
+      padding-right: 3em;
+      color: #aaa; }

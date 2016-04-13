@@ -1,0 +1,9 @@
+.contact-sheet {
+  display: flex;
+  flex-direction: column; }
+  .contact-sheet > div {
+    display: flex;
+    margin-bottom: 1.5em; }
+    .contact-sheet > div > i {
+      color: #4196be;
+      margin-right: 0.5em; }

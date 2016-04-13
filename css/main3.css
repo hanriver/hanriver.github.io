@@ -1,0 +1,261 @@
+a {
+  color: #888;
+  text-decoration: none; }
+  a:hover {
+    color: #4196be; }
+
+h1 {
+  margin: 0;
+  margin-bottom: 1em; }
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #fff; }
+
+address {
+  font-style: normal; }
+
+.fixed-width {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media screen and (max-width: 650px) {
+    .fixed-width {
+      width: auto;
+      margin-left: 10px;
+      margin-right: 10px; } }
+
+#container {
+  height: 100%;
+  display: flex; }
+  @media screen and (min-height: 650px) and (min-width: 650px) {
+    #container {
+      display: block; } }
+  @media screen and (max-width: 650px) {
+    #container {
+      display: block; } }
+
+#middle {
+  margin-top: 2em;
+  width: 100%; }
+
+header {
+  background-color: #efefef;
+  background-color: transparent;
+  min-width: 250px;
+  padding: 15px;
+  margin-top: 1em; }
+  @media screen and (min-height: 650px) and (min-width: 650px) {
+    header {
+      position: fixed;
+      bottom: 0em;
+      top: 0em; } }
+  @media screen and (max-width: 650px) {
+    header {
+      text-align: center;
+      padding: 0; } }
+
+header h1 {
+  display: none; }
+
+#logo-image {
+  height: 125px; }
+
+#left-menu {
+  flex-direction: column;
+  margin-top: 3em;
+  font-weight: 300; }
+  @media screen and (max-width: 650px) {
+    #left-menu {
+      margin-top: 1em;
+      background-color: #4196be; } }
+
+#left-menu .menu, .submenu {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+#left-menu .submenu {
+  margin-left: 1.5em; }
+
+#left-menu .menu a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 0.25em;
+  text-transform: lowercase;
+  font-size: 1.25em; }
+  #left-menu .menu a:before {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+    font-size: 1.25em;
+    content: '';
+    width: 0.9em;
+    vertical-align: top;
+    display: inline-block; }
+  @media screen and (max-width: 650px) {
+    #left-menu .menu a {
+      color: white;
+      font-weight: normal; } }
+#left-menu .menu a:hover {
+  color: #4196be; }
+  @media screen and (max-width: 650px) {
+    #left-menu .menu a:hover {
+      color: #c4e5f4; } }
+#left-menu .menu li.selected a {
+  color: #4196be; }
+  #left-menu .menu li.selected a:before {
+    content: 'chevron_right'; }
+  @media screen and (max-width: 650px) {
+    #left-menu .menu li.selected a {
+      color: #c4e5f4; } }
+@media screen and (max-width: 650px) {
+  #left-menu .menu {
+    display: flex;
+    width: 100%;
+    margin-top: 0; }
+    #left-menu .menu li {
+      flex-grow: 1;
+      font-size: 1.25em; } }
+
+header #header-extras {
+  margin-top: 2em; }
+  header #header-extras .info-item {
+    display: flex;
+    color: #888;
+    padding: 4px;
+    margin-top: 1.5em;
+    font-weight: 300;
+    font-size: 0.85em; }
+    header #header-extras .info-item i {
+      vertical-align: top;
+      font-size: 1.25em;
+      color: inherit;
+      margin-right: 5px; }
+  header #header-extras a.info-item:hover {
+    color: #4196be; }
+  header #header-extras #location, header #header-extras #hours, header #header-extras #social-links, header #header-extras #phone {
+    /*
+    text-align:center;
+    */ }
+  header #header-extras #social-links {
+    margin-top: 1.5em;
+    margin-left: 1em; }
+  @media screen and (max-width: 650px) {
+    header #header-extras {
+      display: flex;
+      margin-top: 0;
+      align-items: flex-start; }
+      header #header-extras #location, header #header-extras #hours {
+        display: none; }
+        header #header-extras #location :nth-child(2), header #header-extras #hours :nth-child(2) {
+          display: none; }
+      header #header-extras .info-item {
+        display: flex;
+        margin-top: 0; }
+        header #header-extras .info-item i {
+          color: #4196be;
+          font-size: 24px;
+          margin: 0;
+          padding-right: 12px;
+          height: 48px;
+          line-height: 48px;
+          text-align: center; }
+      header #header-extras #phone {
+        text-align: left;
+        flex-grow: 1;
+        font-size: 24px;
+        padding-left: 0; }
+        header #header-extras #phone :nth-child(2) {
+          line-height: 48px;
+          padding-right: 16px;
+          white-space: nowrap; }
+        header #header-extras #phone i {
+          margin-left: 0;
+          color: inherit; }
+      header #header-extras #social-links {
+        text-align: right;
+        margin: 0; }
+        header #header-extras #social-links a {
+          margin-left: 10px;
+          vertical-align: bottom;
+          margin: 4px;
+          padding: 12px;
+          display: inline-block; }
+          header #header-extras #social-links a img {
+            display: block;
+            width: 24px;
+            height: 24px;
+            padding: 0; }
+      header #header-extras #phone a, header #header-extras #social-links a {
+        color: #4196be;
+        display: inline-block;
+        border-bottom: medium solid black; }
+        header #header-extras #phone a#social-links-yelp, header #header-extras #social-links a#social-links-yelp {
+          border-color: #a00; }
+        header #header-extras #phone a#social-links-facebook, header #header-extras #social-links a#social-links-facebook {
+          border-color: #3b5998; } }
+
+#social-links a img {
+  width: 24px;
+  padding: 0.1em; }
+
+#social-links a {
+  opacity: 1; }
+
+#social-links a:hover {
+  opacity: 1; }
+
+@media screen and (min-height: 650px) and (min-width: 650px) {
+  #content, footer {
+    margin-left: 280px; } }
+
+#content h1 {
+  font-weight: 200;
+  text-transform: lowercase; }
+
+#front-images {
+  display: flex;
+  width: 100%; }
+
+#front-images div {
+  flex: 1;
+  text-align: center; }
+
+#front-images img {
+  width: 300px; }
+
+footer {
+  color: #999;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 0.9em; }
+
+span.rarr {
+  background-image: url("../images/ico_rarr.png");
+  background-size: cover;
+  width: 1em;
+  height: 0.8em;
+  margin: 0 0.25em;
+  display: inline-block; }

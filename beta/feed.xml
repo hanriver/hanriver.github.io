@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Han River Restaurant</title>
+    <description>Description meta TBD
+</description>
+    <link>http://www.thehanriver.com/beta/</link>
+    <atom:link href="http://www.thehanriver.com/beta/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 13 Apr 2016 05:11:34 -0700</pubDate>
+    <lastBuildDate>Wed, 13 Apr 2016 05:11:34 -0700</lastBuildDate>
+    <generator>Jekyll v3.0.3</generator>
+    
+  </channel>
+</rss>

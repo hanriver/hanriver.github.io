@@ -5,15 +5,22 @@ h2 {
 #restaurant-menu {
   display: flex;
   flex-direction: column; }
+  #restaurant-menu .image-placeholder {
+    background-size: cover;
+    background-position: center; }
   #restaurant-menu .cat1 .image-placeholder {
-    background-image: url("../images/meat.jpg");
-    background-size: cover; }
+    background-image: url("../images/appz.jpg"); }
+  #restaurant-menu .cat2 .image-placeholder {
+    background-image: url("../images/entree.jpg"); }
   #restaurant-menu .menu-category {
     flex: 1;
     display: block;
     text-decoration: none; }
     #restaurant-menu .menu-category .image-placeholder {
       opacity: 0.5; }
+      @media screen and (max-width: 650px) {
+        #restaurant-menu .menu-category .image-placeholder {
+          opacity: 1; } }
     #restaurant-menu .menu-category:hover .image-placeholder {
       opacity: 1; }
     #restaurant-menu .menu-category:hover li {
