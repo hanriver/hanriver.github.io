@@ -24,7 +24,7 @@
 
 @keyframes show-quote {
   from {
-    color: transparent; }
+    color: rgba(0, 0, 0, 0); }
   to {
     color: rgba(0, 0, 0, 0.5); } }
 @keyframes show-content {
